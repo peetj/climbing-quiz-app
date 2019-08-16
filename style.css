@@ -1,8 +1,8 @@
 header{
     height: 80px;
     position: fixed;
-    border: 1px solid grey;
-    background-color: lightblue;
+    border: 1px solid black;
+    background-color: grey;
     width: 100%;
     margin: 0px;
     text-align: center;
@@ -25,7 +25,7 @@ h1 {
 
 #stats li {
     display: inline-block;
-    border: 1px solid grey;
+    border: 1px solid black;
     margin: 0px 80px;
 }
 
@@ -37,14 +37,14 @@ main {
 #questions-pane{
     width: 70%;
     margin: 10% auto;
-    background-color: lightsalmon;
+    background-color: grey;
     border: 1px solid grey;
 }
 
 .question{
     margin: 10%;
-    border: 1px solid grey;
-    background-color: lightgreen;
+    border: 1px solid black;
+    background-color: lightgrey;
     display: block;
 }
 
