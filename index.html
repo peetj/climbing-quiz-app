@@ -3,24 +3,32 @@
 <head>
   <title>Climbing Quiz</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo:900|Rubik&display=swap" rel="stylesheet">
   <meta name="description" content="A quiz that tests users' knowledge of climbing systems">
 </head>
 <body>
     <header>
-        <h1 id='title'>Climbing Quiz</h1>
+        <h1 id='title'>Rock Climbing Anchors Quiz</h1>
         <ul id='stats'>
-            <li id='question-number'>Question Number</li>
-            <li id='score'>Score</li>
+            <li id='question-number-display'>
+                <h3>Question</h3>
+                <h4 id='question-number'></h4>
+            </li>
+            <li id='score-display'>
+                <h3>Score</h3>
+                <h4 id='score'></h4>
+            </li>
         </ul>
     </header>
     <main>
-        <div id='questions-pane'>
-            <form id='start-quiz-form'>
-                <h2>Start Quiz?</h2>
-                <button id='start-quiz-button' type='button'>
-                    Start
-                </button>
+        <div id='question-pane'>
+            <form id='quiz-form'>
+                <h2 id='question-text'></h2>
+                <ul id='answers'>
+                </ul>
             </form>
         </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
