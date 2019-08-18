@@ -135,6 +135,7 @@ button{
 button:hover{
     background-color: rgb(149,176,206, .8);
     transition: background 0.2s;
+    cursor: pointer;
 }
 
 h3, h4{
