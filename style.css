@@ -143,19 +143,6 @@ h3, h4{
     margin: 2px;
 }
 
-/*styling for phones*/
-/*@media only screen and (max-width: 480px){
-    h2{
-        font-size: 200%;
-    }
-    button{
-        font-size: 180%;
-    }
-    #stats li *{
-        font-size: 180%;
-    }
-}*/
-
 @keyframes slide-up {
     0% {
         opacity: 0;
