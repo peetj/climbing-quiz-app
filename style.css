@@ -13,7 +13,6 @@ Clouds: #FDFDFC
 }
 
 header{
-    height: 150px;
     padding: 15px;
     padding-top: 20px;
     background-color: rgb(0, 0, 0, .6);
@@ -32,6 +31,10 @@ h1 {
     margin-bottom: 0px;
     font-family: 'Exo', sans-serif;
     font-weight: 700;
+    font-size: 200%;
+}
+h2{
+    font-size: 160%;
 }
 
 #stats {
@@ -47,11 +50,14 @@ h1 {
     display: inline-block;
     border: 1px solid #FDFDFC;
     border-radius: 5px;
-    margin: 0px 80px;
+    margin: 0px 10%;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+#stats li *{
+    font-size: 120%;
 }
 li #question-number-display{
     margin-right: 5px;
@@ -120,7 +126,7 @@ button{
     border: 1px solid #FDFDFC;
     border-radius: 4px;
     padding: 5px 10px;
-    font-size: 20px;
+    font-size: 100%;
     width: 80%;
     opacity: 0;
     animation-name: slide-up;
@@ -136,6 +142,19 @@ button:hover{
 h3, h4{
     margin: 2px;
 }
+
+/*styling for phones*/
+/*@media only screen and (max-width: 480px){
+    h2{
+        font-size: 200%;
+    }
+    button{
+        font-size: 180%;
+    }
+    #stats li *{
+        font-size: 180%;
+    }
+}*/
 
 @keyframes slide-up {
     0% {

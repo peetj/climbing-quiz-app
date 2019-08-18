@@ -3,7 +3,7 @@
 let score = null;
 let questionNumber = 0;
 const questionSet = [
-    {type: 'start-screen', available: false, text: 'Do you know the ropes?', answers: ['Start Quiz']}, 
+    {type: 'start-screen', available: false, text: 'Do you know your ropes? Test your knowledge!', answers: ['Start Quiz']}, 
     {type: 'question', id: 1, available: true, correctAnswer: 2, text:'The SERENE acronym for building anchors stands for:' , answers: ['Solid, Even, REinforced, Neat, Elevated', 'Solid, Equalized, REdundant, Non-Extending', 'Separated, Elevated, REactive, NEver open', 'Sequential, Equalized, REinforced, Non-Extending'], feedbackIfFalse: 'Incorrect, the correct answer is Solid, Equalized, REdundant, Non-Extending'}, 
     {type: 'question', id: 2, available: true, correctAnswer: 2, text:'The standard tie-in knot is:' , answers: ['Bowline', 'Figure 8 Follow-Through', 'Alpine Butterfly', 'Gri Gri'], feedbackIfFalse: 'Incorrect, the correct answer is Figure 8 follow-through'}, 
     {type: 'question', id: 3, available: true, correctAnswer: 1, text:'The Munter Hitch is useful for:' , answers: ['Belaying or lowering', 'Anchoring to a tree', 'Ascending a rope', 'Tying in'], feedbackIfFalse: 'Incorrect, the correct answer is Belaying or lowering'},
@@ -140,7 +140,7 @@ function renderScorePage(){
     $('#answers').on('click', '.seeScore', function(e){
         clearQuestionPane();
         if (score === 100){
-            $('#question-text').text(`${score}%<br/>Great job, you got a perfect score! Would you like to try again?`);
+            $('#question-text').text(`${score}% Great job, you got a perfect score! Would you like to try again?`);
         }
         else if (score >= 50){
             $('#question-text').text(`${score}% Not too shabby! Would you like to try again?`);
